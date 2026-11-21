@@ -20,5 +20,7 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.docker" },
+  -- Emmet --
+  { import = "astrocommunity.pack.html-css" },
   -- import/override with your plugins folder
 }

@@ -69,6 +69,19 @@ return {
           },
         },
       },
+      -- emmet-ls is installed by the html-css pack in community.lua; the key must match its server name
+      emmet_ls = {
+        filetypes = {
+          "html",
+          "blade",
+          "vue",
+          "css",
+          "scss",
+          "javascriptreact",
+          "typescriptreact",
+          "gotmpl",
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
