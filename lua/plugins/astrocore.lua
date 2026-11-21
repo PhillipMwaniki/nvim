@@ -45,7 +45,9 @@ return {
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
-        wrap = false, -- sets vim.opt.wrap
+        wrap = true, -- soft-wrap long lines on screen (the file itself is unchanged)
+        linebreak = true, -- wrap at word boundaries instead of mid-word
+        breakindent = true, -- keep wrapped lines at the same indent as the line they continue
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
