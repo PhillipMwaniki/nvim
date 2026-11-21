@@ -18,23 +18,7 @@ return {
 
   -- == Examples of Overriding Plugins ==
 
-  -- customize dashboard options
-  {
-    "folke/snacks.nvim",
-    opts = {
-      dashboard = {
-        preset = {
-          header = table.concat({
-            "██████  ██   ██ ██ ██      ██      ██ ██████ ",
-            "██   ██ ██   ██ ██ ██      ██      ██ ██   ██",
-            "██████  ███████ ██ ██      ██      ██ ██████ ",
-            "██      ██   ██ ██ ██      ██      ██ ██     ",
-            "██      ██   ██ ██ ███████ ███████ ██ ██     ",
-          }, "\n"),
-        },
-      },
-    },
-  },
+  -- dashboard header lives in lua/plugins/dashboard.lua
 
   -- You can disable default plugins as follows:
   { "max397574/better-escape.nvim", enabled = false },
