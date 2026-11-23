@@ -1,4 +1,3 @@
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -23,6 +22,9 @@ return {
       virtual_text = true,
       underline = true,
     },
+    wrap = true, -- Enable soft wrapping
+    linebreak = true, -- Wrap lines at convenient word boundaries
+    breakindent = true, -- Maintain indentation on wrapped lines
     -- passed to `vim.filetype.add`
     filetypes = {
       -- see `:h vim.filetype.add` for usage
